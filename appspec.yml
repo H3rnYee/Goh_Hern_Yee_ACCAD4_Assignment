@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/20250730-flask
+    destination: /home/ec2-user/Goh_Hern_Yee_ACCAD4_Assignment
 hooks:
   ApplicationStop: #hooks to tell code deploy
     - location: scripts/stop-server.sh

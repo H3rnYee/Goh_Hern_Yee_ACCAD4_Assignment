@@ -3,14 +3,14 @@ set -e
 
 echo "Installing dependencies..."
 
-DEPLOY_DIR="/home/ec2-user/20250730-FLASK"
+DEPLOY_DIR="/home/ec2-user/Goh_Hern_Yee_ACCAD4_Assignment"
 
 # Ensure ec2-user owns the folder
 sudo chown -R ec2-user:ec2-user $DEPLOY_DIR
 
 # Run the rest as ec2-user to avoid permission issues with venv
 sudo -u ec2-user bash <<'EOF'
-cd /home/ec2-user/20250730-FLASK
+cd /home/ec2-user/Goh_Hern_Yee_ACCAD4_Assignment
 
 # Safety check: does requirements.txt exist?
 if [ ! -f requirements.txt ]; then
